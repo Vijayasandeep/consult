@@ -1,20 +1,13 @@
+import nezuko1 from "../images/nezuko1.webp";
+import nezuko2 from "../images/nezuko2.jpeg";  
+import nezuko3 from "../images/nezuko3.jpeg";
+import nezuko4 from "../images/nezuko4.webp";
 
 const About = () => {
     return (
-        <div className="bg-gray-100 min-h-screen">
+        <div className="bg-gray-100">
             {/* Navbar */}
-            <nav className="bg-blue-900 text-white py-4">
-                <div className="container mx-auto flex justify-between items-center px-4">
-                    <div className="text-lg font-bold">ATLAS & IRIS</div>
-                    <div className="space-x-6 text-sm">
-                        <a href="#" className="hover:underline">ABOUT US</a>
-                        <a href="#" className="hover:underline">SERVICES</a>
-                        <a href="#" className="hover:underline">CAREERS</a>
-                        <a href="#" className="hover:underline">CONNECT US</a>
-                    </div>
-                </div>
-            </nav>
-
+        
             {/* About Us Section */}
             <div className="container mx-auto py-10 px-4">
                 <h2 className="text-2xl font-bold text-gray-700">ABOUT US</h2>
@@ -56,7 +49,7 @@ const About = () => {
                     <div className="flex justify-center mt-4">
                         <div className="text-center">
                             <img
-                                src="/images/director.jpg"
+                                src={nezuko1}
                                 alt="Director"
                                 className="w-24 h-24 rounded-full mx-auto"
                             />
@@ -70,7 +63,7 @@ const About = () => {
                         {/* Business Development Manager */}
                         <div className="text-center">
                             <img
-                                src="/images/pooja.jpg"
+                                src={nezuko2}
                                 alt="Pooja Patel"
                                 className="w-16 h-16 rounded-full mx-auto"
                             />
@@ -82,7 +75,7 @@ const About = () => {
                         {/* Program Execution Manager */}
                         <div className="text-center">
                             <img
-                                src="/images/harshit.jpg"
+                                src={nezuko3}
                                 alt="Harshit Negi"
                                 className="w-16 h-16 rounded-full mx-auto"
                             />
@@ -94,7 +87,7 @@ const About = () => {
                         {/* Marketing and Sales Manager */}
                         <div className="text-center">
                             <img
-                                src="/images/nancy.jpg"
+                                src={nezuko4}
                                 alt="Nancy"
                                 className="w-16 h-16 rounded-full mx-auto"
                             />

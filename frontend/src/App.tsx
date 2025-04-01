@@ -4,10 +4,12 @@ import About from "./pages/About";
 import Services from "./pages/Services.tsx";
 import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar.tsx";
 
 function App() {
     return (
-        <Router>
+        <Router >
+            <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
