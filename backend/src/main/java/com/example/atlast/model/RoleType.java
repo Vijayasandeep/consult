@@ -1,4 +1,4 @@
-package model;
+package com.example.atlast.model;
 
 public enum RoleType {
     ROLE_USER,
