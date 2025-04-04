@@ -8,7 +8,8 @@ import Navbar from "./components/Navbar.tsx";
 
 function App() {
     return (
-        <Router >
+        <>
+         <Router >
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -18,6 +19,8 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>
+        </>
+       
     );
 }
 

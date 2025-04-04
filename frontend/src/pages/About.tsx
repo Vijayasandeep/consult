@@ -1,110 +1,134 @@
 import nezuko1 from "../images/nezuko1.webp";
-import nezuko2 from "../images/nezuko2.jpeg";  
+import nezuko2 from "../images/nezuko2.jpeg";
 import nezuko3 from "../images/nezuko3.jpeg";
 import nezuko4 from "../images/nezuko4.webp";
 
 const About = () => {
-    return (
-        <div className="bg-gray-100">
-            {/* Navbar */}
-        
-            {/* About Us Section */}
-            <div className="container mx-auto py-10 px-4">
-                <h2 className="text-2xl font-bold text-gray-700">ABOUT US</h2>
+  return (
+    <div>
+      {/* Navbar */}
 
-                {/* Vision Section */}
-                <div className="mt-6 border border-gray-300 p-6 bg-white rounded-lg shadow-sm">
-                    <h3 className="text-xl font-semibold text-center">VISION</h3>
-                    <p className="text-center text-gray-600 mt-2">
-                        WE BELIEVE THAT TRUE WISDOM COMES FROM EXPERIENCE, AND THROUGH OUR JOURNEYS,
-                        INDIVIDUALS WILL GAIN THE INTELLECT TO CREATE LASTING SOLUTIONS.
-                    </p>
-                </div>
+      {/* About Us Section */}
+      <div className="container mx-auto py-10 px-10">
+        <h1 className="text-5xl font-bold text-gray-700 mb-7 flex justify-center">ABOUT US</h1>
 
-                {/* Mission Section */}
-                <div className="mt-6 border border-gray-300 p-6 bg-white rounded-lg shadow-sm">
-                    <h3 className="text-xl font-semibold text-center">MISSION</h3>
-                    <ul className="mt-4 space-y-2">
-                        <li className="flex items-center">
-                            ✅ <span className="ml-2 text-gray-700">TEAM</span>
-                        </li>
-                        <li className="flex items-center">
-                            ✅ <span className="ml-2 text-blue-600">SOLUTIONS</span>
-                        </li>
-                        <li className="flex items-center">
-                            ✅ <span className="ml-2 text-blue-600">SOLUTIONS</span>
-                        </li>
-                        <li className="flex items-center">
-                            ✅ <span className="ml-2 text-blue-600">SOLUTIONS</span>
-                        </li>
-                        <li className="flex items-center">
-                            ✅ <span className="ml-2 text-blue-600">SOLUTIONS</span>
-                        </li>
-                    </ul>
-                </div>
+        {/* Vision Section */}
+        <div
+          className="relative p-10 rounded-lg border border-transparent bg-white 
+ bg-clip-padding before:absolute before:inset-0 before:rounded-lg 
+ before:bg-gradient-to-r before:from-blue-300 before:to-blue-800 
+ before:z-[-1] before:m-[-2px] mb-10"
+        >
+          <h2 className="font-semibold text-center text-4xl mb-5 text-blue-900">
+            VISION
+          </h2>
+          <p className="text-center text-gray-600 mt-2 text-3xl ">
+            WE BELIEVE THAT TRUE WISDOM COMES FROM EXPERIENCE, AND THROUGH{" "}
+            <br /> OUR JOURNEYS, INDIVIDUALS WILL GAIN THE INTELLECT TO CREATE{" "}
+            <br /> LASTING SOLUTIONS.
+          </p>
+        </div>
 
-                {/* Our Leaders Section */}
-                <div className="mt-6 border border-gray-300 p-6 bg-white rounded-lg shadow-sm">
-                    <h3 className="text-xl font-semibold text-center">OUR LEADERS</h3>
-                    <div className="flex justify-center mt-4">
-                        <div className="text-center">
-                            <img
-                                src={nezuko1}
-                                alt="Director"
-                                className="w-24 h-24 rounded-full mx-auto"
-                            />
-                            <h4 className="mt-2 font-bold">DIRECTOR</h4>
-                            <p className="text-sm text-gray-600">ANURAG KUMAR</p>
-                        </div>
-                    </div>
+        {/* Mission Section */}
+        <div
+          className="relative p-6 rounded-lg border-3 border-transparent bg-white 
+                bg-clip-padding before:absolute before:inset-0 before:rounded-lg 
+                before:bg-gradient-to-r before:from-blue-300 before:to-blue-800
+                before:z-[-1] before:m-[-2px] mb-6"
+        >
+          <h3 className="font-semibold text-center text-4xl mb-5 text-blue-900 ">
+            MISSION
+          </h3>
+          <ul className="mt-4 space-y-2 flex items-center justify-center flex-col text-2xl">
+            <li className="mr-16">
+              ✅ <span className="ml-2 text-gray-700">TEAM</span>
+            </li>
+            <li>
+              ✅ <span className="ml-2 text-blue-600">SOLUTIONS</span>
+            </li>
+            <li>
+              ✅ <span className="ml-2 text-blue-600">SOLUTIONS</span>
+            </li>
+            <li>
+              ✅ <span className="ml-2 text-blue-600">SOLUTIONS</span>
+            </li>
+            <li>
+              ✅ <span className="ml-2 text-blue-600">SOLUTIONS</span>
+            </li>
+          </ul>
+        </div>
 
-                    {/* Leader Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                        {/* Business Development Manager */}
-                        <div className="text-center">
-                            <img
-                                src={nezuko2}
-                                alt="Pooja Patel"
-                                className="w-16 h-16 rounded-full mx-auto"
-                            />
-                            <h4 className="mt-2 font-semibold text-sm">BUSINESS DEVELOPMENT MANAGER</h4>
-                            <p className="text-xs text-gray-600">(POOJA PATEL)</p>
-                            <p className="text-xs text-gray-500">MBA (MIT-WPU)</p>
-                        </div>
+        <div className="text-5xl flex items-center justify-center text-blue-900 mb-13">
+          .........................................................................................
+        </div>
+        {/* Our Leaders Section */}
+        <div
+          className="relative p-6 rounded-lg border-3 border-transparent bg-white 
+                bg-clip-padding before:absolute before:inset-0 before:rounded-lg 
+                before:bg-gradient-to-r before:from-blue-300 before:to-blue-800 
+                before:z-[-1] before:m-[-2px] mb-6"
+        >
+          <h1 className="text-4xl font-semibold text-center text-blue-900">
+            OUR LEADERS
+          </h1>
+          <div className="flex justify-center mt-4 text-black">
+            <div className="avatar text-center flex flex-col items-center">
+              <div className="mask mask-squircle w-40">
+                <img src={nezuko1} alt="Anurag Kumar" />
+              </div>
+              <h4 className="mt-2 font-bold">DIRECTOR</h4>
+              <p className="text-sm">ANURAG KUMAR</p>
+            </div>
+          </div>
 
-                        {/* Program Execution Manager */}
-                        <div className="text-center">
-                            <img
-                                src={nezuko3}
-                                alt="Harshit Negi"
-                                className="w-16 h-16 rounded-full mx-auto"
-                            />
-                            <h4 className="mt-2 font-semibold text-sm">PROGRAM EXECUTION MANAGER</h4>
-                            <p className="text-xs text-gray-600">(HARSHIT NEGI)</p>
-                            <p className="text-xs text-gray-500">BTECH (IIT TIRUPATI)</p>
-                        </div>
-
-                        {/* Marketing and Sales Manager */}
-                        <div className="text-center">
-                            <img
-                                src={nezuko4}
-                                alt="Nancy"
-                                className="w-16 h-16 rounded-full mx-auto"
-                            />
-                            <h4 className="mt-2 font-semibold text-sm">MARKETING AND SALES MANAGER</h4>
-                            <p className="text-xs text-gray-600">(NANCY)</p>
-                            <p className="text-xs text-gray-500">MASTERS (IIT MADRAS)</p>
-                        </div>
-                    </div>
-                </div>
+          {/* Leader Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            {/* Business Development Manager */}
+            <div className="avatar text-center flex flex-col">
+              <div className="mask mask-squircle w-40 mx-auto">
+                <img src={nezuko2} alt="Pooja Patel" />
+              </div>
+              <h4 className="mt-2 font-semibold text-sm">
+                BUSINESS DEVELOPMENT MANAGER
+              </h4>
+              <p className="text-xs ">(POOJA PATEL)</p>
+              <p className="text-xs ">MBA (MIT-WPU)</p>
             </div>
 
-            {/* Footer */}
-            <footer className="bg-blue-900 text-white text-center py-4">
-                © 2025 ATLAS & IRIS. All rights reserved.
-            </footer>
+            {/* Program Execution Manager */}
+            <div className="avatar text-center flex flex-col">
+              <div className="mask mask-squircle w-40 mx-auto">
+                <img src={nezuko3} alt="Harshit Negi" />
+              </div>
+
+              <h4 className="mt-2 font-semibold text-sm">
+                PROGRAM EXECUTION MANAGER
+              </h4>
+              <p className="text-xs ">(HARSHIT NEGI)</p>
+              <p className="text-xs ">BTECH (IIT TIRUPATI)</p>
+            </div>
+
+            {/* Marketing and Sales Manager */}
+            <div className="avatar text-center flex flex-col">
+              <div className="mask mask-squircle w-40 mx-auto">
+                <img src={nezuko4} alt="Nancy" />
+              </div>
+              <h4 className="mt-2 font-semibold text-sm">
+                MARKETING AND SALES MANAGER
+              </h4>
+              <p className="text-xs text">(NANCY)</p>
+              <p className="text-xs text">MASTERS (IIT MADRAS)</p>
+            </div>
+          </div>
         </div>
-    );
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-blue-900 text-white text-center py-4">
+        © 2025 ATLAS & IRIS. All rights reserved.
+      </footer>
+    </div>
+  );
 };
 
 export default About;
