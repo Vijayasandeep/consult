@@ -48,7 +48,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section className="min-h-screen bg-white px-4 py-20 text-center">
+        <section className="min-h-[18vh] bg-white px-4 py-4 text-center">
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-4xl font-bold text-indigo-900 mb-6">Services</h2>
                 <p className="max-w-2xl mx-auto text-gray-700 text-base sm:text-lg mb-10">

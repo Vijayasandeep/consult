@@ -5,7 +5,7 @@ import Stats from "../components/Stats";
 import Testimonials from "../components/Testimonials";
 import LatestNews from "../components/LatestNews";
 import FooterSubscribeComponent from "../components/FooterSubcribeComponent";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
       <Stats />
       <LatestNews/>
       <FooterSubscribeComponent/>
-      <Footer/>
+      {/*<Footer/>*/}
     </div>
   );
 };
