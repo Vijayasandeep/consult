@@ -3,6 +3,9 @@ import { NavLink } from "react-router-dom";
 import HomeBG from "../images/HomeBG.jpg";
 import Stats from "../components/Stats";
 import Testimonials from "../components/Testimonials";
+import LatestNews from "../components/LatestNews";
+import FooterSubscribeComponent from "../components/FooterSubcribeComponent";
+import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
   return (
@@ -46,6 +49,9 @@ const Home: React.FC = () => {
       </div>
       <Testimonials />
       <Stats />
+      <LatestNews/>
+      <FooterSubscribeComponent/>
+      <Footer/>
     </div>
   );
 };
