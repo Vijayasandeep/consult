@@ -21,11 +21,11 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="bg-[#00287A] text-white py-4">
+        <nav className="bg-white text-blue py-4">
             <div className="container mx-auto px-4 flex items-center justify-between relative">
                 {/* Logo */}
-                <img src={logo} alt="ATLAS & IRIS" className="h-12 sm:h-16 w-auto" />
-
+               <NavLink to='/'> <img src={logo} alt="ATLAS & IRIS" className="h-12 sm:h-16 w-auto" />
+               </NavLink>
                 {/* Desktop Links */}
                 <div className="hidden sm:flex space-x-6 text-sm">
                     <NavLink to="/about" className="hover:underline">ABOUT US</NavLink>
