@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
-import logo from "../images/logo.png";
+import logo from "../images/logo.jpg";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -54,7 +54,6 @@ const Navbar = () => {
                             <Link to="/services" onClick={() => setIsOpen(false)} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Services</Link>
                             <Link to="/about" onClick={() => setIsOpen(false)} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">About Us</Link>
                             <Link to="/contact" onClick={() => setIsOpen(false)} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Contact Us</Link>
-                            <Link to="/careers" onClick={() => setIsOpen(false)} className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Careers</Link>
                         </div>
                     )}
                 </div>

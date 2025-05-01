@@ -4,7 +4,7 @@ const newsData = [
   {
     title:
       "Solving Business Challenges: Consulting Solutions for Mid-Size Organizations and Startups",
-    image: "https://images.unsplash.com/photo-1551836022-4c4c79ecde16", // Replace with your actual image
+    image: "https://images.unsplash.com/photo-1551836022-4c4c79ecde16",
     link: "#",
   },
   {

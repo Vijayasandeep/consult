@@ -1,12 +1,12 @@
 // import careers from "../images/careers.jpg";
 import sky from "../images/sky.jpg";
-import abstract from "../images/abstract.jpg";
+// import abstract from "../images/abstract.jpg";
 
 const Careers = () => {
   return (
     <div>
       <div className="group relative">
-  <img className="h-full w-full" src={abstract} alt="careers" />
+  {/*<img className="h-full w-full" src={abstract} alt="careers" />*/}
   
   <h1 className="text-white text-3xl font-bold absolute top-5 ml-170">CAREERS</h1>
   <h1 className="text-white text-3xl font-bold text-center pt-20 absolute top-10 left-5 transition-all duration-1000 group-hover:left-20">

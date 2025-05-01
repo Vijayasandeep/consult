@@ -11,9 +11,9 @@ const FooterSubscribeComponent: React.FC = () => {
             Atlast & Iris 
           </h1>
           <p className="text-sm mt-4">
-            We are group of Corporate Executives with specialization in Marketing,
-            Business Development, Demand Generation, Customer Services, HR and
-            Finance.
+            We are a group of Freelancers
+            with specialization in Marketing, Business Strategy, IT, Engineering Solutions,
+            HR and Finance.
           </p>
         </div>
 

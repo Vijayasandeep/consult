@@ -1,32 +1,62 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const teamMembers = [
   {
-    name: "Harrison",
-    role: "WordPress Dev.",
-    img: "https://i.pravatar.cc/300?img=1",
+    name: "Anurag Kumar",
+    role: "Director",
+    img: "./public/images/anurag.jpg",
+    social: {
+      facebook: "https://facebook.com/harrison",
+      instagram: "https://www.instagram.com/_its_anuraag?igsh=MTB5YXZvazlkbmt3ag==",
+      linkedin: "https://www.linkedin.com/in/anurag-kumar-367aab244",
+      mail: "mailto:harrison@example.com",
+    },
   },
   {
-    name: "Elizabeth Sofia",
-    role: "WordPress Dev.",
-    img: "https://i.pravatar.cc/300?img=2",
+    name: "Pooja J Patil",
+    role: "Business Development",
+    img: "./public/images/pooja.jpg",
+    social: {
+      facebook: "https://facebook.com/elizabeth",
+      instagram: "https://instagram.com/elizabeth",
+      linkedin: "https://www.linkedin.com/in/pooja-j-patil-505598225",
+      mail: "mailto:elizabeth@example.com",
+    },
   },
   {
-    name: "Charlie Cooper",
-    role: "WordPress Dev.",
-    img: "https://i.pravatar.cc/300?img=3",
+    name: "Harshith Negi",
+    role: "Project Management",
+    img: "./public/images/harshith.jpg",
+    social: {
+      facebook: "https://facebook.com/charlie",
+      instagram: "https://www.instagram.com/harshit_negi_12v?igsh=MXU3cnZodmJxYjJ0cQ==",
+      linkedin: "https://www.linkedin.com/in/harshit-negi-23933b232",
+      mail: "mailto:charlie@example.com",
+    },
   },
   {
-    name: "Lucy Evelyn",
-    role: "WordPress Dev.",
-    img: "https://i.pravatar.cc/300?img=4",
+    name: "Deeksha Jha",
+    role: "Marketing & Sales",
+    img: "./public/images/deeksha.jpg",
+    social: {
+      facebook: "https://facebook.com/lucy",
+      instagram: "https://www.instagram.com/dakshhhh_j?igsh=dnFnbzM2ZG5oNHo=",
+      linkedin: "https://www.linkedin.com/in/diksha-kumari-8a26aa255",
+      mail: "mailto:lucy@example.com",
+    },
   },
 ];
 
 const About: React.FC = () => {
   return (
     <div>
-<div className="bg-blue-400 text-white px-6 py-12 md:py-20">
+      <div className="bg-blue-400 text-white px-6 py-12 md:py-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <p className="text-sm tracking-wide uppercase mb-2">Know Who We Are</p>
@@ -43,25 +73,24 @@ const About: React.FC = () => {
             <div className="border-l-4 pl-4 border-white text-sm mb-4">
               <p className="mb-2">
                 <span className="text-3xl text-white">“</span>
-                Its an approach that the bring to gather the best financial planning top
-                and the best investment management
+                True leadership in consulting isn't about having all the answers—it's about empowering teams and clients to discover what's possible beyond the obvious
               </p>
               <div className="flex items-center space-x-3 mt-4">
-                <img
-                  src="https://i.pravatar.cc/50?img=12"
-                  alt="Mark Adison"
-                  className="w-10 h-10 rounded-md"
-                />
+                {/*<img*/}
+                {/*  src="./public/images/anurag.jpg"*/}
+                {/*  alt="Anurag"*/}
+                {/*  className="w-10 h-10 rounded-md"*/}
+                {/*/>*/}
                 <div>
-                  <p className="font-semibold">Mark Adison</p>
-                  <p className="text-xs text-red-600">CEO @ MICROFOT</p>
+                  <p className="font-semibold">Anurag</p>
+                  <p className="text-s ">Director @ ATLAST</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="w-full">
             <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+              src="./public/images/about.jpg"
               alt="Teamwork"
               className="rounded-lg w-full h-auto object-cover"
             />
@@ -71,11 +100,12 @@ const About: React.FC = () => {
 
       <section className="py-16 px-4 bg-white text-center">
         <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">Our Team</h2>
-        <p className="text-gray-500 mb-8">Meet our creative team</p>
-        <div className="flex justify-center mb-8">
-          <div className="h-1 w-6 bg-orange-500 rounded-full mx-1"></div>
-          <div className="h-1 w-2 bg-orange-300 rounded-full mx-1"></div>
-          <div className="h-1 w-2 bg-orange-300 rounded-full mx-1"></div>
+        <p className="text-gray-500 mb-8">Meet our leadership team</p>
+        <div className="flex justify-center space-x-2 mb-14">
+          <span className="w-1 h-1 bg-orange-500 rounded-full" />
+          <span className="w-1 h-1 bg-orange-500 rounded-full" />
+          <span className="w-1 h-1 bg-orange-500 rounded-full" />
+          <span className="w-15 h-1 bg-orange-500 rounded-full" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
@@ -88,14 +118,22 @@ const About: React.FC = () => {
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-800 mb-1">{member.name}</h3>
                 <p className="text-sm text-gray-500 mb-4">{member.role}</p>
-                <p className="text-sm text-gray-600 mb-4">
-                  A small river named Duden flows by their place and supplies it with the necessary
-                </p>
-                <div className="flex justify-center gap-4">
-                  <i className="fab fa-facebook-f text-gray-400 hover:text-blue-600"></i>
-                  <i className="fab fa-twitter text-gray-400 hover:text-blue-400"></i>
-                  <i className="fab fa-linkedin-in text-gray-400 hover:text-blue-700"></i>
-                  <i className="fab fa-youtube text-gray-400 hover:text-red-600"></i>
+                {/*<p className="text-sm text-gray-600 mb-4">*/}
+                {/*  A small river named Duden flows by their place and supplies it with the necessary*/}
+                {/*</p>*/}
+                <div className="flex justify-center gap-4 text-gray-500">
+                  {/*<a href={member.social.facebook} target="_blank" rel="noopener noreferrer">*/}
+                  {/*  <FontAwesomeIcon icon={faFacebookF} className="hover:text-blue-600 transition-colors duration-200" />*/}
+                  {/*</a>*/}
+                  <a href={member.social.instagram} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faInstagram} className="hover:text-pink-500 transition-colors duration-200" />
+                  </a>
+                  <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faLinkedinIn} className="hover:text-blue-700 transition-colors duration-200" />
+                  </a>
+                  <a href={member.social.mail} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faEnvelope} className="hover:text-red-500 transition-colors duration-200" />
+                  </a>
                 </div>
               </div>
             </div>
