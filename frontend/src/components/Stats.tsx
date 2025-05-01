@@ -1,28 +1,29 @@
 import React from 'react';
 import StatsBG from "../images/StatsBG.jpg"; // Replace with your image path
-import { FaUserFriends, FaStar, FaMoneyBillWave, FaTrophy } from "react-icons/fa";
+import { FaUserFriends, FaStar, FaMoneyBillWave } from "react-icons/fa";
 
 const stats = [
   {
     icon: <FaUserFriends size={32} />,
-    value: "165,489",
+    value: "500+",
     label: "Support Given",
   },
   {
     icon: <FaStar size={32} />,
-    value: "500+",
+    value: "20+",
     label: "Clients Rating",
   },
   {
     icon: <FaMoneyBillWave size={32} />,
-    value: "2 M+",
+    value: "2L+",
     label: "Money Saved",
   },
-  {
-    icon: <FaTrophy size={32} />,
-    value: "578",
-    label: "Awards won",
-  },
+  // {
+  //   icon: <FaTrophy size={32} />,
+  //   value: "578",
+  //   label: "Awards won",
+  // },
+
 ];
 
 const Stats: React.FC = () => {
@@ -37,20 +38,21 @@ const Stats: React.FC = () => {
       <div className="absolute inset-0 bg-black/60" />
 
       {/* Stats */}
-      <div className="relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8 px-6 w-full max-w-6xl">
+      <div className="relative z-10 flex flex-wrap justify-center gap-40 px-6 w-full max-w-6xl">
         {stats.map((item, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-center text-center"
-          >
-            <div className="bg-white/20 rounded-full p-4 mb-2">
-              {item.icon}
+            <div
+                key={index}
+                className="flex flex-col items-center justify-center text-center"
+            >
+              <div className="bg-white/20 rounded-full p-4 mb-2">
+                {item.icon}
+              </div>
+              <h3 className="text-xl font-bold">{item.value}</h3>
+              <p className="text-sm text-gray-300">{item.label}</p>
             </div>
-            <h3 className="text-xl font-bold">{item.value}</h3>
-            <p className="text-sm text-gray-300">{item.label}</p>
-          </div>
         ))}
       </div>
+
     </div>
   );
 };

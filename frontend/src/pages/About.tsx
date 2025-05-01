@@ -10,7 +10,7 @@ const teamMembers = [
   {
     name: "Anurag Kumar",
     role: "Director",
-    img: "./public/images/anurag.jpg",
+    img: "./src/images/anurag.jpg",
     social: {
       facebook: "https://facebook.com/harrison",
       instagram: "https://www.instagram.com/_its_anuraag?igsh=MTB5YXZvazlkbmt3ag==",
@@ -21,7 +21,7 @@ const teamMembers = [
   {
     name: "Pooja J Patil",
     role: "Business Development",
-    img: "./public/images/pooja.jpg",
+    img: "./src/images/pooja.jpg",
     social: {
       facebook: "https://facebook.com/elizabeth",
       instagram: "https://instagram.com/elizabeth",
@@ -32,7 +32,7 @@ const teamMembers = [
   {
     name: "Harshith Negi",
     role: "Project Management",
-    img: "./public/images/harshith.jpg",
+    img: "./src/images/harshith.jpg",
     social: {
       facebook: "https://facebook.com/charlie",
       instagram: "https://www.instagram.com/harshit_negi_12v?igsh=MXU3cnZodmJxYjJ0cQ==",
@@ -43,7 +43,7 @@ const teamMembers = [
   {
     name: "Deeksha Jha",
     role: "Marketing & Sales",
-    img: "./public/images/deeksha.jpg",
+    img: "./src/images/deeksha.jpg",
     social: {
       facebook: "https://facebook.com/lucy",
       instagram: "https://www.instagram.com/dakshhhh_j?igsh=dnFnbzM2ZG5oNHo=",
@@ -73,7 +73,7 @@ const About: React.FC = () => {
             <div className="border-l-4 pl-4 border-white text-sm mb-4">
               <p className="mb-2">
                 <span className="text-3xl text-white">“</span>
-                True leadership in consulting isn't about having all the answers—it's about empowering teams and clients to discover what's possible beyond the obvious
+                True leadership in consulting isn't about having all the answers-it's about empowering teams and clients to discover what's possible beyond the obvious
               </p>
               <div className="flex items-center space-x-3 mt-4">
                 {/*<img*/}
@@ -90,7 +90,7 @@ const About: React.FC = () => {
           </div>
           <div className="w-full">
             <img
-              src="./public/images/about.jpg"
+              src="./src/images/about.jpg"
               alt="Teamwork"
               className="rounded-lg w-full h-auto object-cover"
             />

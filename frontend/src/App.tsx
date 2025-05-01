@@ -5,6 +5,7 @@ import Services from "./pages/Services.tsx";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar.tsx";
 import Footer from "./components/Footer.tsx";
+import LatestNews from "./pages/LatestNews.tsx";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                             <Route path="/" element={<Home />} />
                             <Route path="/about" element={<About />} />
                             <Route path="/services" element={<Services />} />
+                            <Route path="/services/:key" element={<LatestNews />} />
                             <Route path="/contact" element={<Contact />} />
                         </Routes>
                     </main>
