@@ -1,16 +1,21 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import anuragImg from "../images/anurag.jpg";
+import poojaImg from "../images/pooja.jpg";
+import harshithImg from "../images/harshith.jpg";
+import deekshaImg from "../images/deeksha.jpg";
+import about from "../images/about.jpg";
 import {
   faInstagram,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const teamMembers = [
   {
     name: "Anurag Kumar",
     role: "Director",
-    img: "./src/images/anurag.jpg",
+    img: anuragImg,
     social: {
       facebook: "https://facebook.com/harrison",
       instagram: "https://www.instagram.com/_its_anuraag?igsh=MTB5YXZvazlkbmt3ag==",
@@ -21,10 +26,10 @@ const teamMembers = [
   {
     name: "Pooja J Patil",
     role: "Business Development",
-    img: "./src/images/pooja.jpg",
+    img: poojaImg,
     social: {
       facebook: "https://facebook.com/elizabeth",
-      instagram: "https://instagram.com/elizabeth",
+      instagram: "https://instagram.com/",
       linkedin: "https://www.linkedin.com/in/pooja-j-patil-505598225",
       mail: "mailto:elizabeth@example.com",
     },
@@ -32,7 +37,7 @@ const teamMembers = [
   {
     name: "Harshith Negi",
     role: "Project Management",
-    img: "./src/images/harshith.jpg",
+    img: harshithImg,
     social: {
       facebook: "https://facebook.com/charlie",
       instagram: "https://www.instagram.com/harshit_negi_12v?igsh=MXU3cnZodmJxYjJ0cQ==",
@@ -43,7 +48,7 @@ const teamMembers = [
   {
     name: "Deeksha Jha",
     role: "Marketing & Sales",
-    img: "./src/images/deeksha.jpg",
+    img: deekshaImg,
     social: {
       facebook: "https://facebook.com/lucy",
       instagram: "https://www.instagram.com/dakshhhh_j?igsh=dnFnbzM2ZG5oNHo=",
@@ -90,7 +95,7 @@ const About: React.FC = () => {
           </div>
           <div className="w-full">
             <img
-              src="./src/images/about.jpg"
+              src={about}
               alt="Teamwork"
               className="rounded-lg w-full h-auto object-cover"
             />
@@ -131,9 +136,9 @@ const About: React.FC = () => {
                   <a href={member.social.linkedin} target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faLinkedinIn} className="hover:text-blue-700 transition-colors duration-200" />
                   </a>
-                  <a href={member.social.mail} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faEnvelope} className="hover:text-red-500 transition-colors duration-200" />
-                  </a>
+                  {/*<a href={member.social.mail} target="_blank" rel="noopener noreferrer">*/}
+                  {/*  <FontAwesomeIcon icon={faEnvelope} className="hover:text-red-500 transition-colors duration-200" />*/}
+                  {/*</a>*/}
                 </div>
               </div>
             </div>

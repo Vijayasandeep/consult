@@ -25,7 +25,7 @@ const Navbar = () => {
             <div className="w-full px-6 sm:px-16 py-4 flex items-center justify-between">
                 {/* Logo */}
                 <NavLink to="/">
-                    <img src={logo} alt="ATLAS & IRIS" className="h-10 sm:h-14 w-auto" />
+                    <img src={logo} alt="ATLAS & IRIS" className="h-10 sm:h-15 w-auto" />
                 </NavLink>
 
                 {/* Desktop Links */}

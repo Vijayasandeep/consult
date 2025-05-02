@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import business from "../images/business.jpg";
+import marketing from "../images/marketing.jpg";
 
 const newsData = [
     {
         title:
             "Solving Business Challenges: Consulting Solutions for Mid-Size Organizations and Startups",
-        image: "./src/images/business.jpg",
+        image: business,
         summary:
             "Discover how our expert business consultants can help streamline operations, optimize KPIs, and overcome common growth barriers.",
         link: "/services/business",
@@ -21,7 +23,7 @@ const newsData = [
     {
         title:
             "Boost Your Business: How Marketing Experts Can Drive Success for Mid-Size Organizations",
-        image: "./src/images/marketing.jpg",
+        image: marketing,
         summary:
             "Learn how a strong marketing foundation, digital strategy, and branding tactics can elevate your market presence.",
         link: "/services/marketing",

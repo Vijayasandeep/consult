@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const FooterSubscribeComponent: React.FC = () => {
   return (
@@ -21,9 +22,17 @@ const FooterSubscribeComponent: React.FC = () => {
         <div>
           <h2 className="text-lg font-semibold mb-4">Useful Links</h2>
           <ul className="space-y-2 text-sm">
-            <li><a href="#" className="text-cyan-400 hover:underline">Privacy policy</a></li>
-            <li><a href="#" className="text-cyan-400 hover:underline">Terms & Conditions</a></li>
-            <li><a href="#" className="hover:underline">FAQ</a></li>
+            <li>
+              <Link to="/privacy-policy" className="text-cyan-400 hover:underline">
+                Privacy Policy
+              </Link>
+            </li>
+            <li>
+              <Link to="/terms-and-conditions" className="text-cyan-400 hover:underline">
+                Terms & Conditions
+              </Link>
+            </li>
+            {/*<li><a href="#" className="hover:underline">FAQ</a></li>*/}
           </ul>
         </div>
 
