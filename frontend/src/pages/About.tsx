@@ -61,7 +61,7 @@ const teamMembers = [
 const About: React.FC = () => {
   return (
     <div>
-      <div className="bg-blue-400 text-white px-6 py-12 md:py-20">
+      <div className="bg-[#00287a] text-white px-6 py-12 md:py-20">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <p className="text-sm tracking-wide uppercase mb-2">Know Who We Are</p>

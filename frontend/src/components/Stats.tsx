@@ -1,6 +1,6 @@
 import React from 'react';
 import StatsBG from "../images/StatsBG.jpg"; // Replace with your image path
-import { FaUserFriends, FaStar, FaMoneyBillWave } from "react-icons/fa";
+import {FaUserFriends, FaStar, FaMoneyBillWave, FaTrophy} from "react-icons/fa";
 
 const stats = [
   {
@@ -18,11 +18,11 @@ const stats = [
     value: "2L+",
     label: "Money Saved",
   },
-  // {
-  //   icon: <FaTrophy size={32} />,
-  //   value: "578",
-  //   label: "Awards won",
-  // },
+  {
+    icon: <FaTrophy size={32} />,
+    value: "30",
+    label: "Projects Handled",
+  },
 
 ];
 

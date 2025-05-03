@@ -1,0 +1,1 @@
+export const VITE_URL = "https://consult-5ppb.onrender.com";
