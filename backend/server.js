@@ -2,18 +2,21 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path';
 import { fileURLToPath } from 'url';
-import { dirname } from 'path';
 import contactRoutes from './routes/contactRoutes.js';
 
 // Load environment variables
 dotenv.config();
 
 const app = express();
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
+
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGODB_URI)
@@ -24,8 +27,8 @@ mongoose.connect(process.env.MONGODB_URI)
 app.use('/api/contact', contactRoutes);
 
 // Basic route
-app.get('/', (req, res) => {
-    res.send('API is running');
+app.get('/*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
 });
 
 // Start server
