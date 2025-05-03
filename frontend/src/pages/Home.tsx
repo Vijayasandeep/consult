@@ -29,7 +29,7 @@ const Home: React.FC = () => {
     <div className="relative min-h-screen w-full bg-black overflow-hidden">
       {/* Hero Section */}
       <div
-        className="relative z-10 flex items-center justify-center min-h-screen px-4 sm:px-8 md:px-16 lg:px-32 text-white bg-no-repeat bg-cover bg-center"
+        className="relative z-10 flex items-center  min-h-screen px-4 sm:px-8 md:px-16 lg:px-32 text-white bg-no-repeat bg-cover bg-center"
         style={{
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",

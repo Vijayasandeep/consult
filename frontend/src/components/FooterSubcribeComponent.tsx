@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-// import {VITE_URL} from "../Constants.ts";
+import {VITE_URL} from "../Constants.ts";
 
 const FooterSubscribeComponent: React.FC = () => {
   const [email, setEmail] = useState("");
 
   const subscribe = async (email: string) => {
     try {
-      const res = await axios.post("http://localhost:5000/api/subscribe", { email });
+      const res = await axios.post(`${VITE_URL}/api/subscribe`, { email });
       alert(res.data.message);
       setEmail(""); // Clear input on success
     } catch (error) {

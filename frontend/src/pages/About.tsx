@@ -81,14 +81,15 @@ const About: React.FC = () => {
                 True leadership in consulting isn't about having all the answers-it's about empowering teams and clients to discover what's possible beyond the obvious
               </p>
               <div className="flex items-center space-x-3 mt-4">
-                {/*<img*/}
-                {/*  src="./public/images/anurag.jpg"*/}
-                {/*  alt="Anurag"*/}
-                {/*  className="w-10 h-10 rounded-md"*/}
-                {/*/>*/}
+                <img
+                  src={anuragImg}
+                  alt="Anurag"
+                  className="w-20 h-20 rounded-md"
+                />
                 <div>
-                  <p className="font-semibold">Anurag</p>
-                  <p className="text-s ">Director @ ATLAST</p>
+                  <p className="text-lg font-bold">Anurag Kumar</p>
+                  <p className="text-lg ">Director @ ATLAST</p>
+                  <p className="text-lg ">Alumni IIT Tirupati</p>
                 </div>
               </div>
             </div>
