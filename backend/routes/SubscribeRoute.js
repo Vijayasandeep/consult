@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express';
+import Subscriber from '../models/Subscriber.js';
+
 const router = express.Router();
-const Subscriber = require('../models/Subscriber');
 
 router.post('/', async (req, res) => {
     const { email } = req.body;
@@ -25,4 +26,4 @@ router.post('/', async (req, res) => {
     }
 });
 
-module.exports = router;
+export default router;

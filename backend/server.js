@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import contactRoutes from './routes/contactRoutes.js';
+import subscribeRoute from './routes/SubscribeRoute.js';
 
 // Load environment variables
 dotenv.config();
@@ -21,6 +22,7 @@ mongoose.connect(process.env.MONGODB_URI)
 
 // Routes
 app.use('/api/contact', contactRoutes);
+app.use('/api/subscribe', subscribeRoute);
 
 // Basic route
 app.get('/', (req, res) => {
