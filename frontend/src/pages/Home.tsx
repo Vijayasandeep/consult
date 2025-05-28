@@ -7,7 +7,7 @@ import Stats from "../components/Stats";
 import LatestNews from "../components/LatestNews";
 import FooterSubscribeComponent from "../components/FooterSubcribeComponent";
 // import Footer from "../components/Footer";
-
+import PickSiteDefaultsButton from "../components/PickSite";
 const Home: React.FC = () => {
   const [bgImage, setBgImage] = useState(HomeBGDesktop);
 
@@ -52,6 +52,7 @@ const Home: React.FC = () => {
             <button className="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition">
               HIRE US
             </button>
+            <PickSiteDefaultsButton />
             <NavLink to="/contact">
               <button className="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
                 CONTACT US
